@@ -16,10 +16,10 @@ A Laravel Vue Authentication boiler plate using JWT
 -   Run composer install
 -   Cp .env.example to .env
 -   Generate application key (php artisan key:generate)
--   Run npm install
--   Run npm run dev
 -   Configure .env file
 -   Run migrations (php artisan migrate)
+-   Run npm install
+-   Run npm run dev
 
 # Generate JWT Secret
 
