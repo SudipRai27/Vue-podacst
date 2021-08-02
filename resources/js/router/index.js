@@ -4,12 +4,13 @@ import VueRouter from "vue-router";
 import auth from "./routes/auth";
 import home from "./routes/home";
 import dashboard from "./routes/dashboard";
+import podcast from "./routes/podcast";
 import errors from "./routes/errors";
 
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-    routes: [...auth, ...home, ...dashboard, ...errors],
+    routes: [...auth, ...home, ...dashboard, ...errors, ...podcast],
     mode: "history"
 });
 

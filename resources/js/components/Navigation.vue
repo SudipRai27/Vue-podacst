@@ -38,6 +38,11 @@
             </li>
           </template>
           <template v-else>
+            <li class="nav-item">
+              <router-link :to="{ name: 'podcast.index' }" class="nav-link">
+                Podcast
+              </router-link>
+            </li>
             <li class="nav-item dropdown">
               <router-link
                 id="navbarDropdown"

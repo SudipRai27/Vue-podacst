@@ -1,3 +1,5 @@
+import router from "@/router";
+
 export const setHttpToken = token => {
     if (!token) {
         localStorage.removeItem("authToken");
@@ -14,4 +16,19 @@ export const removeValidationErrors = (errors, field) => {
         delete errors[field];
     }
     return errors;
+};
+
+export const redirectTo = statusCode => {
+    switch (statusCode) {
+        case 404:
+            return router.replace({
+                name: "404"
+            });
+        case 403:
+            return router.replace({
+                name: "403"
+            });
+        default:
+            return;
+    }
 };

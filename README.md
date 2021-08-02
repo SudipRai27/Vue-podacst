@@ -1,6 +1,6 @@
 # About
 
-A Laravel Vue Authentication boiler plate using JWT
+A Simple Podcast using Vue, Vuex, Vue router and other dependencies.
 
 #### `Backend: Laravel 8`
 
@@ -28,3 +28,4 @@ A Laravel Vue Authentication boiler plate using JWT
 # Running the project
 
 > php artisan serve
+> php artisan queue:work
